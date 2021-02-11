@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: rgb(224,224,224);
+    background: #30475e;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.screen-content {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.screen-content h1 {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 238, 0);
+}
+
+.contentBx {
+    padding: 70px 200px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.screen-content .contentBx h2 {
+    color: #111;
+}
+
+.input-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+    transition:all .5s;
+}
+
+.input-content .input-tags {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input-content .input-tags input{
+    margin-bottom: 30px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    transition:all .5s;
+
+}
+
+.input-content .input-tags label {
+    font-size: 10px;
+    margin-bottom: 5px;
+    transition:all .5s;
+
+}
+
+.input-content .btn-content button {
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition:  .3s ease;
+}
+
+.input-content .btn-content .add-btn:active {
+    transform: scale(0.8);
+    background-color: orange;
+    color: yellow;
+}
+.input-content .btn-content .ans-btn:active {    
+    background-color: aquamarine;
+    transform: scale(0.8);
+    color: magenta;
+}
+.input-content .btn-content .add-btn.buttonOut {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: none;
+    margin-top: 30px;
+    background-color: rgb(148, 148, 148);
+    color: #464646;
+}
+
+.input-tags input.fadeOut {
+    display: none;
+    cursor: none;
+    pointer-events: none;
+}
+.input-tags label.fadeOut,
+p.fadeOut {
+    display: none;
+    opacity: 0;
+    text-transform: none;
+    z-index: 0;
+}
+
+
+.input-words {
+    display: none;
+    pointer-events: none;
+    cursor: none;
+}
+.input-words.fadeIn {
+    pointer-events: all;
+    display: block;
+    cursor: text;
+    position: absolute;
+    margin-top: 20px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}    
